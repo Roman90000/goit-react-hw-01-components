@@ -1,9 +1,5 @@
-import { Container } from "./Profile.styled";
-import { AvatarInfo } from "./Profile.styled";
-import { Username } from "./Profile.styled";
-import { UserTagLocal } from "./Profile.styled";
-import { UserFollowersBox } from "./Profile.styled";
-import { UserFollowersItem } from "./Profile.styled";
+import { Container, AvatarInfo, Username, UserTagLocal, UserFollowersBox, UserFollowersItem } from "./Profile.styled";
+
 
 export const Profile = ({ items: { username, tag, location, avatar, stats: { followers, views, likes } } }) => {
     return <Container>
