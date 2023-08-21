@@ -1,9 +1,9 @@
-import { HistoryEl } from "./TransactionItems.styled";
+import { TableEl } from "./TransactionItems.styled";
 
 export const TransactionItems = ({ item: { id, type, amount, currency } }) => {
     return  <tr key={id}>
-                <HistoryEl>{type}</HistoryEl>
-                <HistoryEl>{amount}</HistoryEl>
-                <HistoryEl>{currency}</HistoryEl>
+                <TableEl>{type}</TableEl>
+                <TableEl>{amount}</TableEl>
+                <TableEl>{currency}</TableEl>
             </tr>
 };

@@ -10,8 +10,24 @@ padding: 0px;
 border-radius: 10px;
 `;
 
+export const Status = styled.span`
+    margin: 0px 15px;
+
+    background-color: ${props => {
+        if (props.status) {
+            return "green";
+        }
+            return "red";
+    }};
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+`;
+
 export const ListItem = styled.div`
 display: flex;
+align-items: center;
 margin-bottom: 30px;
 background-color: orange;
 border-radius: 10px;
