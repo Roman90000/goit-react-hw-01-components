@@ -1,31 +1,38 @@
-import { Container } from "./Profile.styled"
+import { Container } from "./Profile.styled";
+import { AvatarInfo } from "./Profile.styled";
+import { Username } from "./Profile.styled";
+import { UserTagLocal } from "./Profile.styled";
+import { UserFollowersBox } from "./Profile.styled";
+import { UserFollowersItem } from "./Profile.styled";
 
 export const Profile = ({ items: { username, tag, location, avatar, stats: { followers, views, likes } } }) => {
-    return <div>
-  <Container>
+    return <Container>
+  <div>
     <img
       src={avatar}
       alt="User avatar"
       width="400"
-    />
-    <p>{username}</p>
-    <p>{tag}</p>
-    <p>{location}</p>
-  </Container>
+        />
+        <AvatarInfo>
+          <Username>{username}</Username>
+          <UserTagLocal>@{tag}</UserTagLocal>
+          <UserTagLocal>{location}</UserTagLocal>
+        </AvatarInfo>
+  </div>
 
-  <ul>
-    <li>
-      <span>Followers</span>
+  <UserFollowersBox>
+    <UserFollowersItem>
+      <span><b>Followers</b></span><br />
       <span>{followers}</span>
-    </li>
-    <li>
-      <span>Views</span>
+    </UserFollowersItem>
+    <UserFollowersItem>
+      <span><b>Views</b></span><br />
       <span>{views}</span>
-    </li>
-    <li>
-      <span>Likes</span>
+    </UserFollowersItem>
+    <UserFollowersItem>
+      <span><b>Likes</b></span><br />
       <span>{likes}</span>
-    </li>
-  </ul>
-</div>;
+    </UserFollowersItem>
+  </UserFollowersBox>
+</Container>;
 };
