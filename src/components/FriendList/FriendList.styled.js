@@ -12,9 +12,10 @@ border-radius: 10px;
 
 export const Status = styled.span`
     margin: 0px 15px;
+    
 
     background-color: ${props => {
-        if (props.status) {
+        if (props.status === 'true') {
             return "green";
     };
             return "red";
