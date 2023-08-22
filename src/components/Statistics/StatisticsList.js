@@ -1,4 +1,6 @@
 import { ListItem } from "./Statistics.styled";
+import PropTypes from "prop-types";
+
 
 
 export const StatisticsList = ({ item: { label, percentage } }) => { 
@@ -7,3 +9,10 @@ export const StatisticsList = ({ item: { label, percentage } }) => {
                   <span><b>{percentage}%</b></span>
             </ListItem>
 };
+
+StatisticsList.prototype = {
+      item: PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.string.isRequired
+      })
+}

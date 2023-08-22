@@ -3,10 +3,17 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 background-color: orange;
-width: 400px;
+width: 430px;
 border-radius: 15px;
 margin: 20px auto 50px;
 padding: 15px;
+`;
+
+export const ImgEl = styled.img`
+border-radius: 50%;
+width: 200px;
+margin: 0 auto;
+display: block;
 `;
 
 export const AvatarInfo = styled.div`

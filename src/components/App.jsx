@@ -6,15 +6,17 @@ import data from "../data.json";
 import friends from "../friends.json";
 import transactions from "../transactions.json";
 import { TransactionHistory } from "./TransactionItems/TransactionHistory";
+import { Layout } from "./Layout";
+import 'modern-normalize';
 
 
 export const App = () => {
   return (
-    <div>
+    <Layout>
       <Profile items={user} />
       <Statistics items={data} />
       <FriendList items={friends} />
       <TransactionHistory items={transactions}/>
-    </div>
+    </Layout>
   );
 };

@@ -16,7 +16,7 @@ export const Status = styled.span`
     background-color: ${props => {
         if (props.status) {
             return "green";
-        }
+    };
             return "red";
     }};
     
@@ -25,7 +25,7 @@ export const Status = styled.span`
     border-radius: 50%;
 `;
 
-export const ListItem = styled.div`
+export const ListItem = styled.li`
 display: flex;
 align-items: center;
 margin-bottom: 30px;

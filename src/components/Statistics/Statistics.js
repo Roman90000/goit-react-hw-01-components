@@ -1,5 +1,9 @@
 import { StatisticsList } from "./StatisticsList";
 import { Container, Title, List, BoxUl } from "./Statistics.styled";
+import PropTypes from "prop-types";
+
+
+
 
 
 export const Statistics = ({items}) => {
@@ -12,3 +16,9 @@ export const Statistics = ({items}) => {
             </BoxUl>
             </Container>
 };
+
+Statistics.prototype = {
+    items: PropTypes.shape({
+        id: PropTypes.number.isRequired
+    })
+}
