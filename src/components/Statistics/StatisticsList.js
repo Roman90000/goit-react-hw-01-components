@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 
 
-export const StatisticsList = ({ item: { label, percentage } }) => { 
-      return <ListItem>
+export const StatisticsList = ({ item: {id, label, percentage } }) => { 
+      return <ListItem key={id}>
                   <span>{label}</span><br />
                   <span><b>{percentage}%</b></span>
             </ListItem>

@@ -34,5 +34,4 @@ text-align: center;
 padding: 15px;
 border-radius: 10px;
 border: 1px solid black;
-background-color: randomColor;
 `;
